@@ -108,11 +108,12 @@ while (password != 'Daisy1994'){
 código primero al menos una vez, porque la condición está al final. EJ: */
 
 let tecla = 'A';
+
 do{
-    tecla = prompt("Teclear letra mágica");
+    tecla = prompt ('Adivine la tecla');
     if(tecla != 'A'){
-        alert("Intente otra vez");
+        alert('Ingrese otra letra');
+    }else{
+        console.log('Adivinaste');
     }
-}while (tecla == 'A'){
-    console.log('Adivinaste');
-}
+}while(tecla != 'A');
